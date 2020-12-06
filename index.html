@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>NEXA PRIVATE LIMITED</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script>
+  $(".para2").hover(function(){
+    $("img").hide(1000);
+  }); 
+  </script>
+  
+	<style type="text/css">
+	ul 
+    {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-left:800px; 
+    margin-top:50px;
+    }
+  
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+  .slideshow-container 
+    {
+    max-width:1000px;
+    position:relative;
+    margin:auto;
+    }
+
+  .dot 
+    {
+    height:15px;
+    width:15px;
+    margin:0 2px;
+    background-color:#bbb;
+    border-radius:50%;
+    display:inline-block;
+    transition:background-color 0.6s ease;
+    }
+
+  .active 
+    {
+    background-color:#717171;
+    }
+
+  .fade 
+    {
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1s;
+    animation-name:fade;
+    animation-duration:1s;
+    }
+
+  @-webkit-keyframes fade 
+    {
+    from 
+    {
+      opacity:.4
+    } 
+    to 
+    {
+      opacity: 1
+    }
+    }
+
+  @keyframes fade 
+    {
+    from 
+    {
+      opacity:.4
+    } 
+    to 
+    {
+      opacity: 1
+    }
+    }
+
+  li 
+    {
+    display:inline;
+    padding:2%;
+    } 
+
+  li a
+    {
+	  text-decoration:none;
+    color:black;
+    }
+
+  .nav
+    {
+	  margin-left:60%;
+	  font-size:20px;
+	  font-family:Times New Roman;
+	  background-color:gray;
+	  height:100px;
+	  width:100%;
+	  float:right;
+	  top: -1px;
+	  position:sticky;
+    }
+
+  .myslidesfade
+    {
+    height:800px;
+    width:1327px;
+    }
+
+  .para
+    {
+    font-size:60px;
+    font-family:Times New Roman;
+    }
+
+  .para2
+    {
+	  font-size:60px;
+	  font-family:Times New Roman;
+    }
+
+  .jk
+   {
+	 height:250px;
+	 width:300px;
+   }	
+
+  .content
+   {
+	 font-size:25px;
+   }
+
+  .pk
+   {
+ 	 height:200px;
+ 	 width:200px;
+   }
+
+  .i
+    { 
+	  border:1px solid #ddd;
+  	border-radius:4px;
+  	padding:5px;
+  	width:150px;
+  	margin:15px;
+    }
+
+  .images
+   {
+   margin-left:20px;
+   height:20px;
+   width:40px;
+   }
+.active
+{
+  background-color: cyan;
+  }
+
+	</style>
+
+</head>
+
+<body>
+
+	<div style="display:inline-block; position:fixed; top:2px; margin-top:10px; z-index:10;">
+    <img src="symbol.jpg" height="88px" width="220px" >
+  </div>		
+		
+	<div class="nav">
+		<ul>
+	   <li class="active"><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="product.html">Product</a></li>
+     <li><a href="contact.html">Contact us</a></li>
+    </ul>	
+	</div>
+	<br>
+	<br>
+	
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+      <img src="allnexacar.jpg" style="width:100%">
+  <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="allnexacar2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="allnexcar3.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() 
+      {
+        var i;
+        var slides=document.getElementsByClassName("mySlides");
+        var dots=document.getElementsByClassName("dot");
+  
+        for(i=0; i<slides.length; i++) 
+        {
+        slides[i].style.display="none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i=0; i<dots.length; i++) 
+        {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); 
+      }
+  </script>
+
+	<br>
+ 	<br>
+  
+<div>
+	<center><p class="para"><u>About us</u></caption></center></p>
+	
+  <div class="img">
+		<img src="images.jpg" alt="image not found" class="jk">
+	</div>
+	
+  <div class="content" style="margin-left:26%;margin-top:-19.5%;">
+		<span>Nexa is a retail network from Maruti Suzuki that caters the high-end consumers who have gone beyond their first cars and are now looking for an experience. It offers a high level of sophistication and is based on the principles of exclusivity, pampering and listening to the consumer.Maruti Suzuki found that they don’t have a premium lounge for their top end customers<span id="dots">...</span><span id="more"> For them, a regular showroom with just a centralized AC and snacks would not do. They need a luxury space in private away from the loud talks and laughter. So Maruti Suzuki went up and launched Maruti Suzuki Nexa for this group of people who wish to own a premium car. And another substantial difference is noted in terms of safety features, as vehicles sold from Nexa outlets come standard with dual front airbags, along with ABS.</span></span><button onclick="myFunction()" id="myBtn">Read more</button>
+	<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+  </div>
+</div>
+<br>
+<br>
+
+<div>
+	<center><p class="para2"><u>NEXA WORLD</u></p></center>
+	<center>		
+	 <img class="i" src="scross.jpg" alt="Scross" style="height:200px; width:180px">
+	 <img class="i" src="baleno.jpg" alt="Baleno" style="height:200px; width:180px">
+	 <img class="i" src="ignis.jpg" alt="Ignis" style="height:200px; width:180px">
+	 <img class="i" src="ciaz-4.jpg" alt="Ciaz" style="height:200px; width:180px">
+	 <img class="i" src="xl6.jpg" alt="Xl6" style="height:200px; width:180px">
+	</center>
+</div>
+<br>
+<br>
+
+<div>
+	<center><p class="para"><u>OUR MEMBERS</u></p></center>
+	<center><img src="deepak.jpg" alt="no image found" style="height:300px; width:250px; margin-left:300px;">
+	<img src="dakesh.jpg" alt="no image found" style="height:300px; width:250px; margin-left:100px; margin-right:250px;">
+  </center>
+</div>
+</div>
+<br>
+<br>
+<div style="position: relative;">
+    <footer style="color:white; background:black;">
+    <div class="widget">
+    <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5949348328945!2d73.81558131436907!3d18.54719817320129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf152fbb1b89%3A0x2362573a98c4d215!2sNexa%20Showroom!5e0!3m2!1sen!2sin!4v1573788509843!5m2!1sen!2sin" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div style="position:absolute; /*margin-left:50%; margin-top:-30%;*/left:550px;top: 10px; font-size: 20px;">
+              <h2>Contact Us</h2>
+            </div>
+          <div class="footer-contact" margin-l style="position: absolute; left:-250px;top:50px;">                
+            <ul>
+                <li>Address: Division No. G-21, Mayur Elanza, Sciencecity.</li><br><br>
+                <li>Phone: +(91) 812 861 2684</li><br><br>
+              <li>Email: nexapvtltd@gmail.com</li><br><br></span>
+              </ul>
+          </div>
+        </div>
+        <br>
+        <div class="widget" style="position: absolute;left: 560px; top:260px;">
+            <h2 class="widget-title">Newsletter</h2>
+            <br>
+                <form method="post">
+                <div class="form-group" style="height:150px;width:350px;">
+                <input type="email" name="username" class="form-control" placeholder="Enter Your Email">
+                
+                
+                <div class="subscribe" name="subscribe" id="subscribe" style="margin-top: -20px;">  
+        <button class="btn btn-primay"  style="margin-left: 180px;" type="submit" value="subscribe" name="sub">Subscribe</button>
+                </div>
+        </div>
+                </form>
+                </div>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
